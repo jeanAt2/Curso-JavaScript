@@ -1,0 +1,130 @@
+Webpack - Servidor de Desenvolvimento 
+
+
+
+Arrow Function - Finções anonimas;
+
+Desestruturação recuperar objetos e propiedades de um array
+
+Rest/spread- Duplicar ou repassar um codigo  para outro lugar sem manter referrencia
+
+Import/export - Importar e exportar function de um arquivo.js para outro sem precisar muitas tags no html
+
+Async await- Ela da uma formar de trabalhar com a API de uma forma mais simples;
+
+BABEL:
+- Converte para O codigo que o navegador entende, entretanto não é todo o código
+somente aquilo que o navegador não entende;
+
+CONT e  LET
+
+- Ela não pode ter o seu valor reatribuir o seu valor, só poder mutar
+- Let o mesa função do var
+funçõe com array
+
+- .map(newFunction(){
+
+}, posiçãodo array): serve para percorrer todo o array
+
+- Reduce(function(Total, index)){} : soma de todos itens
+
+- Filter(funcition(){}, ): Filtar os valores dentro do array;
+
+- Find: Procurar uma informação dentro do array;
+
+valores padrão  posso colocar um valor dentro da parametros da função que sera excutada. Ex.:
+funcition soma(a=3, b=6){};
+
+Desestruturação podemos usar Desestruturação nesse caso para reduzir linhas de codigo
+
+
+const user = {
+  nome:"Diego",
+  idade: 23,
+  enderco: {
+    cidade: 'Rio do sul',
+    estado: ' SC',
+  }
+}
+
+=> const { nome, idade, enderco: { cidade} } = user;
+
+console.log(nome);
+console.log(idade);
+console.log(cidade);
+
+
+REST/SPREAD
+
+Rest
+ - pegar o resto das propriedades
+
+const user = {
+  nome:"Diego",
+  idade: 23,
+  empresa: 'Rocketseat'
+}
+
+const arr = [1,2,3,4];
+
+const [a,b, ...c] = arr
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+//1
+//2
+// 3,4
+
+Parametros de function
+
+return(a,b,...params){
+   
+}
+console.log(soma(1,3,4));
+
+//1
+//3
+//4 params com o resto dos parametros adicionados
+ 
+
+
+ SPREAD
+
+ Ele tem a função de repassar uma informação de um objeto/array para outra 
+ estrutura de  dados;
+
+ const arr1 = [1,2,3];
+ conts arr2 = [4,5,6];
+
+ const arr3 = [...arr1, ...arr2];
+
+ ...index = serve para copiar os dados de um objeto/array/parametros
+ 
+  console.log(arr3);
+
+  //[1,2,3,4,5,6]
+
+  Outros exemplos
+
+  const user1 = {
+    name: 'Jean',
+    idade: 26,
+    empresa:'Rocketseat'
+  }
+
+  const user2 = {...user1,name:'Diego'};
+
+  console.log(user2);
+
+  //{ name:"Jean"idade:26, empresa:"Rocketseat"}
+ // empresa:"Rocketseat"
+ // idade:23
+ // name: Diego
+ 
+
+
+
+
+ 
